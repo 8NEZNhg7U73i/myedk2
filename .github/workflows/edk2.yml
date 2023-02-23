@@ -35,7 +35,7 @@ jobs:
       - name: Setup build environment
         run: |-
           sudo apt-get update
-          sudo apt-get install -y nasm acpica-tools build-essential crossbuild-essential-i386 crossbuild-essential-amd64 crossbuild-essential-arm64 uuid-dev python3.8 python3-distutils python3-pip bc gawk llvm-dev lld clang
+          sudo apt-get install -y nasm acpica-tools build-essential crossbuild-essential-i386 crossbuild-essential-amd64 crossbuild-essential-arm64 uuid-dev python3 python3-distutils python3-pip bc gawk llvm-dev lld clang python-is-python3
           sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
           sudo update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 10
 

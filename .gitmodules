@@ -3,10 +3,10 @@
 	url = https://github.com/tianocore/edk2
 [submodule "edk2-libc"]
 	path = edk2-libc
-	url = https://github.com/tianocore/edk2-libc.git
+	url = https://github.com/tianocore/edk2-libc
 [submodule "edk2-test"]
 	path = edk2-test
-	url = https://github.com/tianocore/edk2-test.git
+	url = https://github.com/tianocore/edk2-test
 [submodule "edk2-platforms"]
 	path = edk2-platforms
 	url = https://github.com/tianocore/edk2-platforms

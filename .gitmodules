@@ -10,3 +10,6 @@
 [submodule "edk2-platforms"]
 	path = edk2-platforms
 	url = https://github.com/tianocore/edk2-platforms
+[submodule "edk-shell"]
+	path = edk-shell
+	url = https://github.com/tianocore/edk-Shell

@@ -19,3 +19,6 @@
 [submodule "edk2-non-osi"]
 	path = edk2-non-osi
 	url = https://github.com/tianocore/edk2-non-osi
+[submodule "edk2-archive"]
+	path = edk2-archive
+	url = https://github.com/tianocore/edk2-archive

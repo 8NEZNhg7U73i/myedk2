@@ -105,7 +105,7 @@ jobs:
             sed -i '1739s/goto Done/\/\/goto Done/' edk2/MdeModulePkg/Bus/Isa/Ps2KeyboardDxe/Ps2KbdCtrller.c
             sed -i '1740s/}/\/\/}/' edk2/MdeModulePkg/Bus/Isa/Ps2KeyboardDxe/Ps2KbdCtrller.c
           fi
-          if [ "${{ matric.PACKAGE }}" = "OptionRomPkg" ]; then
+          if [ "${{ matrix.PACKAGE }}" = "OptionRomPkg" ]; then
             # Remove AtapiPassThruDxe.inf
             sed -i 's+OptionRomPkg\/AtapiPassThruDxe\/AtapiPassThruDxe.inf+#OptionRomPkg\/AtapiPassThruDxe\/AtapiPassThruDxe.inf+g' edk2-platforms/Drivers/OptionRomPkg/OptionRomPkg.dsc
           fi

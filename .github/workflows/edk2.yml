@@ -64,6 +64,8 @@ jobs:
           sed -i 's+DEF(GCC5_X64_PREFIX)objcopy+ENV(GCC5_X64_PREFIX)objcopy+g'   edk2/BaseTools/Conf/tools_def.template
           sed -i 's+DEF(GCC5_IA32_PREFIX)gcc+ENV(GCC5_IA32_PREFIX)gcc+g'         edk2/BaseTools/Conf/tools_def.template
           sed -i 's+DEF(GCC5_X64_PREFIX)gcc+ENV(GCC5_X64_PREFIX)gcc+g'           edk2/BaseTools/Conf/tools_def.template
+          # Remove -Werror
+          sed -i 's+ -Werror++g' edk2/BaseTools/Conf/tools_def.template
           if [ ! -d "edk2/BaseTools/Source/C/bin" ]; then
             make -C edk2/BaseTools
           fi

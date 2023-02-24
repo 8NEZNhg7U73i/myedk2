@@ -16,3 +16,6 @@
 [submodule "edk2shelltool"]
 	path = edk2shelltool
 	url = https://github.com/jyao1/EdkiiShellTool
+[submodule "edk2-shelltool"]
+	path = edk2-shelltool
+	url = https://github.com/jyao1/EdkiiShellTool

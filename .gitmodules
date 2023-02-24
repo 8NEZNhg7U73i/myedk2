@@ -16,3 +16,6 @@
 [submodule "edk2-shelltool"]
 	path = edk2-shelltool
 	url = https://github.com/jyao1/EdkiiShellTool
+[submodule "edk2-non-osi"]
+	path = edk2-non-osi
+	url = https://github.com/tianocore/edk2-non-osi

@@ -115,6 +115,11 @@ jobs:
             # Remove CirrusLogic5430Dxe.inf
             sed -i 's+OptionRomPkg\/CirrusLogic5430Dxe\/CirrusLogic5430Dxe.inf+#OptionRomPkg\/CirrusLogic5430Dxe\/CirrusLogic5430Dxe.inf+g' edk2-platforms/Drivers/OptionRomPkg/OptionRomPkg.dsc
           fi
+          if [ "${{ matrix.PACKAGE }}" = "EdkiiShellToolPkg" ]; then
+            # fix comment characters
+            sed -i '1s+##+\/\*+g' edk2-shelltool/EdkiiShellToolPkg/DumpVirtioPciDev/DumpVirtioPciDev.c
+            sed -i '12s+##+\*\/+g' edk2-shelltool/EdkiiShellToolPkg/DumpVirtioPciDev/DumpVirtioPciDev.c
+          fi
 
       - name: Build
         run: |-

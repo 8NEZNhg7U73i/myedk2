@@ -13,3 +13,6 @@
 [submodule "edk-shell"]
 	path = edk-shell
 	url = https://github.com/tianocore/edk-Shell
+[submodule "edk2shelltool"]
+	path = edk2shelltool
+	url = https://github.com/jyao1/EdkiiShellTool

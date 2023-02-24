@@ -117,7 +117,7 @@ jobs:
           export GCC5_AARCH64_PREFIX=aarch64-linux-gnu-
           export WORKSPACE=$PWD
           #ln -s edk2-test/uefi-sct/SctPkg/ SctPkg
-          export PACKAGES_PATH=$WORKSPACE/edk2:$WORKSPACE/edk2-libc:$WORKSPACE/edk2-test:$WORKSPACE/edk2-platforms/Silicon/Intel:$WORKSPACE/edk2-platforms/Drivers:$WORKSPACE/edk2-test/uefi-sct:$WORKSPACE/edk2-platforms/Features:$WORKSPACE/edk2-platforms/Features/Ext4Pkg:$WORKSPACE/edk2-platforms/Features/Ext4Pkg/Ext4Dxe
+          export PACKAGES_PATH=$WORKSPACE/edk2:$WORKSPACE/edk2-libc:$WORKSPACE/edk2-test:$WORKSPACE/edk2-platforms/Silicon/Intel:$WORKSPACE/edk2-platforms/Drivers:$WORKSPACE/edk2-test/uefi-sct:$WORKSPACE/edk2-platforms/Features:$WORKSPACE/edk2-platforms/Features/Ext4Pkg:$WORKSPACE/edk2-platforms/Features/Ext4Pkg/Ext4Dxe:$WORKSPACE/edk2-platforms:$WORKSPACE/edk2-test
           source edk2/edksetup.sh
           build -a ${{ matrix.ARCH }} -t ${{ matrix.TOOLCHAIN }} -p ${{ matrix.PACKAGE }}/${{ matrix.PACKAGE_DSC }} -b ${{ matrix.TARGET }} ${{ matrix.ADDITIONAL_DEFINITION }} -vvvvv
 

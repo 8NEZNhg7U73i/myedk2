@@ -110,6 +110,8 @@ jobs:
           if [ "${{ matrix.PACKAGE }}" = "OptionRomPkg" ]; then
             # Remove AtapiPassThruDxe.inf
             sed -i 's+OptionRomPkg\/AtapiPassThruDxe\/AtapiPassThruDxe.inf+#OptionRomPkg\/AtapiPassThruDxe\/AtapiPassThruDxe.inf+g' edk2-platforms/Drivers/OptionRomPkg/OptionRomPkg.dsc
+            # Remove CirrusLogic5430Dxe.inf
+            sed -i 's+OptionRomPkg\/CirrusLogic5430Dxe\/CirrusLogic5430Dxe.inf+#OptionRomPkg\/CirrusLogic5430Dxe\/CirrusLogic5430Dxe.inf+g' edk2-platforms/Drivers/OptionRomPkg/OptionRomPkg.dsc
           fi
 
       - name: Build
